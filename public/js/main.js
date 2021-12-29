@@ -17,11 +17,16 @@ const testAccessibility = async (e) => {
       alert('Something went wrong');
     } else {
       const { issues } = await response.json();
+      addIssuesToDOM(issues);
+      setLoading(false);
     }
   }
 };
 
 // Add issues to DOM
+const addIssuesToDOM = (issues) => {
+  console.log(issues);
+};
 
 // Set loading state
 const setLoading = (isLoading = true) => {
@@ -34,5 +39,4 @@ const setLoading = (isLoading = true) => {
 };
 
 // Escape HTML
-
 document.querySelector('#form').addEventListener('submit', testAccessibility);
