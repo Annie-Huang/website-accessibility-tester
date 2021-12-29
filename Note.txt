@@ -8,3 +8,109 @@ https://github.com/pa11y/pa11y
 ====================================================================
 
 PS C:\react\website-accessibility-tester> npm i express pa11y
+
+PS C:\react\website-accessibility-tester> node index
+{
+  documentTitle: '50 Projects 50 Days | Traversy Media',
+  pageUrl: 'https://traversy.dev/',
+  issues: [
+    {
+      code: 'WCAG2AA.Principle1.Guideline1_1.1_1_1.H37',
+      type: 'error',
+      typeCode: 1,
+      message: 'Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.',
+      context: '<img src="img/udemy.png">',
+      selector: 'html > body > header > div > a > img',
+      runner: 'htmlcs',
+      runnerExtras: {}
+    },
+    {
+      code: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent',
+      type: 'error',
+      typeCode: 1,
+      message: 'Anchor element found with a valid href attribute, but no link content has been supplied.',
+      context: '<a href="https://youtube.com/traversymedia" target="_blank">\n' +
+        '            <i class="fab fa-y...</a>',
+      selector: 'html > body > footer > div > div:nth-child(1) > a:nth-child(2)',
+      runner: 'htmlcs',
+      runnerExtras: {}
+    },
+    {
+      code: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent',
+      type: 'error',
+      typeCode: 1,
+      message: 'Anchor element found with a valid href attribute, but no link content has been supplied.',
+      context: '<a href="https://twitter.com/traversymedia" target="_blank">\n' +
+        '            <i class="fab fa-t...</a>',
+      selector: 'html > body > footer > div > div:nth-child(1) > a:nth-child(3)',
+      runner: 'htmlcs',
+      runnerExtras: {}
+    },
+    {
+      code: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent',
+      type: 'error',
+      typeCode: 1,
+      message: 'Anchor element found with a valid href attribute, but no link content has been supplied.',
+      context: '<a href="https://facebook.com/traversymedia" target="_blank">\n' +
+        '            <i class="fab fa-f...</a>',
+      selector: 'html > body > footer > div > div:nth-child(1) > a:nth-child(4)',
+      runner: 'htmlcs',
+      runnerExtras: {}
+    },
+    {
+      code: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent',
+      type: 'error',
+      typeCode: 1,
+      message: 'Anchor element found with a valid href attribute, but no link content has been supplied.',
+      context: '<a href="https://www.linkedin.com/in/bradtraversy/" target="_blank">\n' +
+        '            <i class="fab fa-l...</a>',
+      selector: 'html > body > footer > div > div:nth-child(1) > a:nth-child(5)',
+      runner: 'htmlcs',
+      runnerExtras: {}
+    },
+    {
+      code: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent',
+      type: 'error',
+      typeCode: 1,
+      message: 'Anchor element found with a valid href attribute, but no link content has been supplied.',
+      context: '<a href="https://youtube.com/florinpop" target="_blank">\n' +
+        '            <i class="fab fa-y...</a>',
+      selector: 'html > body > footer > div > div:nth-child(3) > a:nth-child(2)',
+      runner: 'htmlcs',
+      runnerExtras: {}
+    },
+    {
+      code: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent',
+      type: 'error',
+      typeCode: 1,
+      message: 'Anchor element found with a valid href attribute, but no link content has been supplied.',
+      context: '<a href="https://twitter.com/florinpop1705" target="_blank">\n' +
+        '            <i class="fab fa-t...</a>',
+      selector: 'html > body > footer > div > div:nth-child(3) > a:nth-child(3)',
+      runner: 'htmlcs',
+      runnerExtras: {}
+    },
+    {
+      code: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent',
+      type: 'error',
+      typeCode: 1,
+      message: 'Anchor element found with a valid href attribute, but no link content has been supplied.',
+      context: '<a href="https://facebook.com/florinpop17" target="_blank">\n' +
+        '            <i class="fab fa-f...</a>',
+      selector: 'html > body > footer > div > div:nth-child(3) > a:nth-child(4)',
+      runner: 'htmlcs',
+      runnerExtras: {}
+    },
+    {
+      code: 'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent',
+      type: 'error',
+      typeCode: 1,
+      message: 'Anchor element found with a valid href attribute, but no link content has been supplied.',
+      context: '<a href="https://www.linkedin.com/in/florinpop17/" target="_blank">\n' +
+        '            <i class="fab fa-l...</a>',
+      selector: 'html > body > footer > div > div:nth-child(3) > a:nth-child(5)',
+      runner: 'htmlcs',
+      runnerExtras: {}
+    }
+  ]
+}
