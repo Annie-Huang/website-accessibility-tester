@@ -8,12 +8,21 @@ const testAccessibility = async (e) => {
   if (url === '') {
     alert('Please add a url');
   } else {
+    setLoading();
   }
 };
 
 // Add issues to DOM
 
 // Set loading state
+const setLoading = (isLoading = true) => {
+  const loader = document.querySelector('.loader');
+  if (isLoading) {
+    loader.style.display = 'block';
+  } else {
+    loader.style.display = 'none';
+  }
+};
 
 // Escape HTML
 
