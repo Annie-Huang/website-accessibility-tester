@@ -117,3 +117,4 @@ PS C:\react\website-accessibility-tester> node index
 }
 
 PS C:\react\website-accessibility-tester> npm start
+PS C:\react\website-accessibility-tester> npm run client
