@@ -25,7 +25,7 @@ const testAccessibility = async (e) => {
 
 // Add issues to DOM
 const addIssuesToDOM = (issues) => {
-  // console.log(issues);
+  console.log(issues);
 
   const issuesOutput = document.querySelector('#issues');
   issuesOutput.innerHTML = '';
@@ -36,14 +36,20 @@ const addIssuesToDOM = (issues) => {
       const output = `
         <div class='card mb-5'>
           <div class='card-body'>
-            <h4>${issues.message}</h4>
+            <h4>${issue.message}</h4>
             
             <p class='bg-light p-3 my-3'>
-              ${escapeHTML(issues.context)}
+              ${escapeHTML(issue.context)}
+            </p>
+            
+            <p class='bg-secondary text-light p-2'>
+              CODE: ${issue.code}
             </p>
           </div>
         </div>
       `;
+
+      issuesOutput.innerHTML += output;
     });
   }
 };
